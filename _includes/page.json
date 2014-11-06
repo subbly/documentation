@@ -1,0 +1,5 @@
+{
+  "title"   : "{{ page.title }}",
+  "href"    : "{{ page.url }}",
+  "content" : "{{ page.content }}",
+}
