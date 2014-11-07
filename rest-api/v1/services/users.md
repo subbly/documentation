@@ -35,7 +35,12 @@ array     includes[]   Relationships to includes (available values: "addresses",
   "response": {
     "users": [
       {
-
+        "uid": "b42fdf18bbd6291136f3b48b9ab378dd",
+        "firstname": "John",
+        "lastname": "Snow",
+        "email": "john.snow@subbly.com",
+        "created_at": "2014-10-21T11:59:46+0000",
+        "updated_at": "2014-11-07T12:45:06+0000"
       },
       ...
     ],
@@ -68,7 +73,12 @@ No params
 {
   "response": {
     "user": {
-
+      "uid": "b42fdf18bbd6291136f3b48b9ab378dd",
+      "firstname": "John",
+      "lastname": "Snow",
+      "email": "john.snow@subbly.com",
+      "created_at": "2014-10-21T11:59:46+0000",
+      "updated_at": "2014-11-07T12:45:06+0000"
     }
   }
 }
@@ -101,7 +111,12 @@ array     includes[]   Relationships to includes (available values: "addresses",
   "response": {
     "users": [
       {
-
+        "uid": "b42fdf18bbd6291136f3b48b9ab378dd",
+        "firstname": "John",
+        "lastname": "Snow",
+        "email": "john.snow@subbly.com",
+        "created_at": "2014-10-21T11:59:46+0000",
+        "updated_at": "2014-11-07T12:45:06+0000"
       },
       ...
     ],
@@ -139,7 +154,12 @@ string   user[password]    The user password
 {
   "response": {
     "user": {
-
+      "uid": "b42fdf18bbd6291136f3b48b9ab378dd",
+      "firstname": "John",
+      "lastname": "Snow",
+      "email": "john.snow@subbly.com",
+      "created_at": "2014-10-21T11:59:46+0000",
+      "updated_at": "2014-11-07T12:45:06+0000"
     }
   }
 }
@@ -171,7 +191,12 @@ string   user[password]    The user password
 {
   "response": {
     "user": {
-
+      "uid": "b42fdf18bbd6291136f3b48b9ab378dd",
+      "firstname": "John",
+      "lastname": "Snow",
+      "email": "john.snow@subbly.com",
+      "created_at": "2014-10-21T11:59:46+0000",
+      "updated_at": "2014-11-07T12:45:06+0000"
     }
   }
 }

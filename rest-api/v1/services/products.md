@@ -35,7 +35,15 @@ array     includes[]   Relationships to includes (available values: "options", "
   "response": {
     "products": [
       {
-
+        "sku": "p123",
+        "status": "draft"
+        "name": "An awesome product",
+        "description": "An awesome product description",
+        "price": 99.99,
+        "sale_price": null, # null or double
+        "quantity": 2,
+        "created_at": "2014-10-21T11:59:46+0000",
+        "updated_at": "2014-10-21T11:59:46+0000"
       },
       ...
     ],
@@ -68,7 +76,15 @@ No params
 {
   "response": {
     "product": {
-
+      "sku": "p123",
+      "status": "draft"
+      "name": "An awesome product",
+      "description": "An awesome product description",
+      "price": 99.99,
+      "sale_price": null, # null or double
+      "quantity": 2,
+      "created_at": "2014-10-21T11:59:46+0000",
+      "updated_at": "2014-10-21T11:59:46+0000"
     }
   }
 }
@@ -101,7 +117,15 @@ array     includes[]   Relationships to includes (available values: "options", "
   "response": {
     "products": [
       {
-
+        "sku": "p123",
+        "status": "draft"
+        "name": "An awesome product",
+        "description": "An awesome product description",
+        "price": 99.99,
+        "sale_price": null, # null or double
+        "quantity": 2,
+        "created_at": "2014-10-21T11:59:46+0000",
+        "updated_at": "2014-10-21T11:59:46+0000"
       },
       ...
     ],
@@ -127,12 +151,13 @@ _Create a new product_
 ### Params
 
 {% highlight text %}
-string         product[sku]           The product sku
-string         product[name]          The product name
-string         product[description]   The product description
-double|float   product[price]         The product price
-double|float   product[sale_price]    The product sale_price
-integer        product[quantity]      The product quantity
+string    product[status]        The product status
+string    product[sku]           The product sku
+string    product[name]          The product name
+string    product[description]   The product description
+double    product[price]         The product price
+double    product[sale_price]    The product sale_price (optional)
+integer   product[quantity]      The product quantity
 {% endhighlight %}
 
 ### Response example
@@ -141,7 +166,15 @@ integer        product[quantity]      The product quantity
 {
   "response": {
     "product": {
-
+      "sku": "p123",
+      "status": "draft"
+      "name": "An awesome product",
+      "description": "An awesome product description",
+      "price": 99.99,
+      "sale_price": null, # null or double
+      "quantity": 2,
+      "created_at": "2014-10-21T11:59:46+0000",
+      "updated_at": "2014-10-21T11:59:46+0000"
     }
   }
 }
@@ -161,7 +194,13 @@ _Edit a product_
 ### Params
 
 {% highlight text %}
-
+string    product[status]        The product status
+string    product[sku]           The product sku
+string    product[name]          The product name
+string    product[description]   The product description
+double    product[price]         The product price
+double    product[sale_price]    The product sale_price (optional)
+integer   product[quantity]      The product quantity
 {% endhighlight %}
 
 ### Response example
@@ -170,7 +209,15 @@ _Edit a product_
 {
   "response": {
     "product": {
-
+      "sku": "p123",
+      "status": "draft"
+      "name": "An awesome product",
+      "description": "An awesome product description",
+      "price": 99.99,
+      "sale_price": null, # null or double
+      "quantity": 2,
+      "created_at": "2014-10-21T11:59:46+0000",
+      "updated_at": "2014-10-21T11:59:46+0000"
     }
   }
 }

@@ -25,7 +25,7 @@ _Get the orders list_
 {% highlight text %}
 integer   limit        Limit of elements to return
 integer   offset       Offset
-array     includes[]   Relationships to includes (available values: "user", "shipping_address", "billing_address").
+array     includes[]   Relationships to includes (available values: "user", "shipping_address", "billing_address", "products").
 {% endhighlight %}
 
 ### Response example
@@ -91,7 +91,7 @@ _Search one or many orders_
 integer   limit        Limit of elements to return
 integer   offset       Offset
 string    q            The search query
-array     includes[]   Relationships to includes (available values: "addresses", "orders").
+array     includes[]   Relationships to includes (available values: "user", "shipping_address", "billing_address", "products").
 {% endhighlight %}
 
 ### Response example
