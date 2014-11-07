@@ -5,4 +5,8 @@ permalink: /core-api/services/setting/
 back_url: /core-api/
 ---
 
-TODO
+## List of methods
+
+- [`all`](#all)
+- [`get`](#get)
+- [`has`](#has)

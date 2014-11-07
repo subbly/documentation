@@ -30,7 +30,7 @@ Return a new `Subbly\Model\User` instance.
 {% highlight php %}
 <?php
 $credentials   = array(
-    'login'    => 'john.snow@subbly.com',
+    'login'    => 'jon.snow@subbly.com',
     'password' => 'hodor123',
 );
 $authenticated = Subbly::api('subbly.user')->authenticate($credentials);
@@ -63,7 +63,7 @@ Return a `Subbly\Model\User` model.
 {% highlight php %}
 <?php
 $users = Subbly::api('subbly.user')->searchBy(array(
-    'firstname' => 'John',
+    'firstname' => 'jon',
     'lastname'  => 'Snow',
     'email'     => '',
 ));
@@ -77,13 +77,13 @@ Return a `Subbly\Model\User` collection.
 {% highlight php %}
 <?php
 $user = Subbly\Model\User;
-$user->firstname = 'John';
+$user->firstname = 'jon';
 $user->lastname  = 'Snow';
 Subbly::api('subbly.user')->create($user);
 
 // or
 Subbly::api('subbly.user')->create(array(
-    'firstname' => 'John',
+    'firstname' => 'jon',
     'lastname'  => 'Snow',
 ));
 {% endhighlight %}
@@ -101,11 +101,11 @@ Subbly::api('subbly.user')->create(array(
 $user_uid = 'USER_UID';
 
 $user = Subbly::api('subbly.user')->find($user_uid);
-$user->firstname = 'John john';
+$user->firstname = 'jon jon';
 Subbly::api('subbly.user')->update($user);
 // or
 Subbly::api('subbly.user')->update($user_uid, array(
-    'firstname' => 'John john',
+    'firstname' => 'jon jon',
 ));
 {% endhighlight %}
 

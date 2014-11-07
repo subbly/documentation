@@ -50,9 +50,7 @@ Return a `Subbly\Model\Product` model.
 {% highlight php %}
 <?php
 $product = Subbly::api('subbly.product')->searchBy(array(
-    'firstname' => 'John',
-    'lastname'  => 'Snow',
-    'email'     => '',
+    'sku' => 'p123',
 ));
 {% endhighlight %}
 
@@ -64,14 +62,14 @@ Return a `Subbly\Model\Product` collection.
 {% highlight php %}
 <?php
 $product = Subbly\Model\Product;
-$product->firstname = 'John';
-$product->lastname  = 'Snow';
+$product->name = 'An awesome product';
+...
 Subbly::api('subbly.product')->create($product);
 
 // or
 Subbly::api('subbly.product')->create(array(
-    'firstname' => 'John',
-    'lastname'  => 'Snow',
+    'name' => 'An awesome product',
+    ...
 ));
 {% endhighlight %}
 
@@ -88,11 +86,11 @@ Subbly::api('subbly.product')->create(array(
 $sku = 'PRODUCT_SKU';
 
 $product = Subbly::api('subbly.product')->find($sku);
-$product->firstname = 'John john';
+$product->name = 'A very awesome product';
 Subbly::api('subbly.product')->update($product);
 // or
 Subbly::api('subbly.product')->update($sku, array(
-    'firstname' => 'John john',
+    'name' => 'A very awesome product',
 ));
 {% endhighlight %}
 

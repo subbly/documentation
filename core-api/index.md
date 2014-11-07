@@ -54,4 +54,4 @@ Subbly::events()->listen('subbly.user:creating', function($user) {
 
 ## Some helps
 
-* [How to create and register my first service]({{ '/helps/create-and-register-my-first-service' | prepend: site.baseurl }})
+* [How to create and register my first service]({{ '/core-api/helps/create-and-register-my-first-service' | prepend: site.baseurl }})

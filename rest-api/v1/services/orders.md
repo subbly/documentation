@@ -127,6 +127,7 @@ _Create a new order_
 ### Params
 
 {% highlight text %}
+string   order[status]   The order status
 {% endhighlight %}
 
 ### Response example
@@ -155,6 +156,7 @@ _Edit a order_
 ### Params
 
 {% highlight text %}
+string   order[status]   The order status
 {% endhighlight %}
 
 ### Response example

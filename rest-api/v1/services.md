@@ -6,7 +6,7 @@ back_url: /rest-api
 ---
 ## Get started
 
-
+## Authentication
 
 ## List of services
 
