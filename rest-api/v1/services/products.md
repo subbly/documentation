@@ -1,31 +1,31 @@
 ---
 layout: page
-title: Users services
-permalink: /rest-api/v1/services/users/
+title: Products services
+permalink: /rest-api/v1/services/products/
 back_url: /rest-api/v1/services
 ---
 
 ## List of methods
 
-- [GET `/users`](#get-users)
-- [GET `/users/:uid`](#get-usersuid)
-- [GET `/users/search`](#get-userssearch)
-- [POST `/users`](#post-users)
-- [PUT&#124;PATCH `/users/:uid`](#putpatch-usersuid)
+- [GET `/products`](#get-products)
+- [GET `/products/:sku`](#get-productssku)
+- [GET `/products/search`](#get-productssearch)
+- [POST `/products`](#post-products)
+- [PUT&#124;PATCH `/products/:sku`](#putpatch-productssku)
 
 
 
 
-## GET `/users`
+## GET `/products`
 
-_Get the users list_
+_Get the products list_
 
 ### Params
 
 {% highlight text %}
 integer   limit        Limit of elements to return
 integer   offset       Offset
-array     includes[]   Relationships to includes (available values: "addresses", "orders").
+array     includes[]   Relationships to includes (available values: "options", "images", "categories").
 {% endhighlight %}
 
 ### Response example
@@ -33,7 +33,7 @@ array     includes[]   Relationships to includes (available values: "addresses",
 {% highlight json %}
 {
   "response": {
-    "users": [
+    "products": [
       {
 
       },
@@ -52,9 +52,9 @@ array     includes[]   Relationships to includes (available values: "addresses",
 
 
 
-## GET `/users/:uid`
+## GET `/products/:sku`
 
-_Get user data_
+_Get product data_
 
 ### Params
 
@@ -67,7 +67,7 @@ No params
 {% highlight json %}
 {
   "response": {
-    "user": {
+    "product": {
 
     }
   }
@@ -77,13 +77,13 @@ No params
 ### HTTP Codes
 
 > 200: OK  
-> 404: User not found
+> 404: Product not found
 
 
 
-## GET `/users/search`
+## GET `/products/search`
 
-_Search one or many users_
+_Search one or many products_
 
 ### Params
 
@@ -91,7 +91,7 @@ _Search one or many users_
 integer   limit        Limit of elements to return
 integer   offset       Offset
 string    q            The search query
-array     includes[]   Relationships to includes (available values: "addresses", "orders").
+array     includes[]   Relationships to includes (available values: "options", "images", "categories").
 {% endhighlight %}
 
 ### Response example
@@ -99,7 +99,7 @@ array     includes[]   Relationships to includes (available values: "addresses",
 {% highlight json %}
 {
   "response": {
-    "users": [
+    "products": [
       {
 
       },
@@ -120,17 +120,19 @@ array     includes[]   Relationships to includes (available values: "addresses",
 
 
 
-## POST `/users`
+## POST `/products`
 
-_Create a new user_
+_Create a new product_
 
 ### Params
 
 {% highlight text %}
-string   user[firstname]   The user firstname
-string   user[lastname]    The user lastname
-string   user[email]       The user email
-string   user[password]    The user password
+string         product[sku]           The product sku
+string         product[name]          The product name
+string         product[description]   The product description
+double|float   product[price]         The product price
+double|float   product[sale_price]    The product sale_price
+integer        product[quantity]      The product quantity
 {% endhighlight %}
 
 ### Response example
@@ -138,7 +140,7 @@ string   user[password]    The user password
 {% highlight json %}
 {
   "response": {
-    "user": {
+    "product": {
 
     }
   }
@@ -152,17 +154,14 @@ string   user[password]    The user password
 
 
 
-## PUT|PATCH `/users/:uid`
+## PUT|PATCH `/products/:sku`
 
-_Edit a user_
+_Edit a product_
 
 ### Params
 
 {% highlight text %}
-string   user[firstname]   The user firstname
-string   user[lastname]    The user lastname
-string   user[email]       The user email
-string   user[password]    The user password
+
 {% endhighlight %}
 
 ### Response example
@@ -170,7 +169,7 @@ string   user[password]    The user password
 {% highlight json %}
 {
   "response": {
-    "user": {
+    "product": {
 
     }
   }
@@ -181,4 +180,4 @@ string   user[password]    The user password
 
 > 200: OK  
 > 400: Request error  
-> 404: User not found
+> 404: Product not found

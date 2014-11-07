@@ -12,10 +12,11 @@ back_url: /rest-api
 
 | Name | Description |
 |------|-------------|
-| [`/orders`]({{ '/rest-api/v1/services/orders' | prepend: site.baseurl }}) | Order service |
-| [`/products`]({{ '/rest-api/v1/services/products' | prepend: site.baseurl }}) | Product service |
-| [`/users`]({{ '/rest-api/v1/services/users' | prepend: site.baseurl }}) | User service |
-| [`/settings`]({{ '/rest-api/v1/services/settings' | prepend: site.baseurl }}) | Setting service |
+| [`/orders`]({{ '/rest-api/v1/services/orders' | prepend: site.baseurl }}) | Orders service |
+| [`/products`]({{ '/rest-api/v1/services/products' | prepend: site.baseurl }}) | Products service |
+| [`/users`]({{ '/rest-api/v1/services/users' | prepend: site.baseurl }}) | Users service |
+| [`/user-addresses`]({{ '/rest-api/v1/services/user-addresses' | prepend: site.baseurl }}) | User addresses service |
+| [`/settings`]({{ '/rest-api/v1/services/settings' | prepend: site.baseurl }}) | Settings service |
 
 ## Common params
 
