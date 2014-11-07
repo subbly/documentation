@@ -23,3 +23,6 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
+
+safe: true
+lsi: false
