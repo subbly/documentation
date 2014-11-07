@@ -18,7 +18,8 @@ Subbly REST API use JSON format.
         "status": {
             "code": 200,
             "message": "OK"
-        }
+        },
+        "version": "v1"
     },
     "response": {
         ...
@@ -28,6 +29,6 @@ Subbly REST API use JSON format.
 
 ## List of versions
 
-| Name | Description |
-|------|-------------|
-| [`/v1`]({{ '/rest-api/v1/services' | prepend: site.baseurl }}) | Version 1 |
+| Name | status | Description |
+|------|--------|-------------|
+| [`/v1`]({{ '/rest-api/v1/services' | prepend: site.baseurl }}) | devel | Version 1 |

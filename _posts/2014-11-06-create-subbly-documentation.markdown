@@ -2,6 +2,8 @@
 layout: post
 title:  "Create Subbly documentation!"
 date:   2014-11-06 19:29:03
+#author: nicolas-brousse
+#meta: 
 categories: subbly documentation
 ---
 

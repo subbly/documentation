@@ -21,6 +21,7 @@ Subbly::api()->service($serviceName)->serviceAction();
 Subbly::api('subbly.user')->all();
 {% endhighlight %}
 
+
 ## List of services
 
 | Name | Description |
@@ -31,6 +32,7 @@ Subbly::api('subbly.user')->all();
 | [`subbly.user`]({{ '/core-api/services/user' | prepend: site.baseurl }}) | User service |
 | [`subbly.user_address`]({{ '/core-api/services/user-address' | prepend: site.baseurl }}) | User address service |
 | [`subbly.setting`]({{ '/core-api/services/setting' | prepend: site.baseurl }}) | Setting service |
+
 
 ## How listen an event
 
@@ -48,3 +50,8 @@ Subbly::events()->listen('subbly.user:creating', function($user) {
 
 `:initializing`: Fired before initialize the service  
 `:initialized`: Fired after initialize the service
+
+
+## Some helps
+
+* [How to create and register my first service]({{ '/helps/create-and-register-my-first-service' | prepend: site.baseurl }})

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Create and register my first service
-permalink: /helps/create-and-register-my-first-service/
+permalink: /core-api/helps/create-and-register-my-first-service/
+back_url: /core-api/
 ---
 
 ## Get started
