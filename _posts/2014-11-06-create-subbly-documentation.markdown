@@ -11,4 +11,4 @@ We just created the Subbly documentation website. In this website you can found 
 
 See you :blush:
 
-> The @Subbly team
+> The Subbly team
