@@ -19,7 +19,7 @@ github_username:  subbly
 markdown: kramdown
 
 gems:
-  - jekyll-mentions
+  # - jekyll-mentions
   - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
