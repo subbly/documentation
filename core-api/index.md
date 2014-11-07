@@ -29,6 +29,7 @@ Subbly::api('subbly.user')->all();
 | [`subbly.order`]({{ '/core-api/services/order' | prepend: site.baseurl }}) | Order service |
 | [`subbly.product`]({{ '/core-api/services/product' | prepend: site.baseurl }}) | Product service |
 | [`subbly.user`]({{ '/core-api/services/user' | prepend: site.baseurl }}) | User service |
+| [`subbly.user_address`]({{ '/core-api/services/user-address' | prepend: site.baseurl }}) | User address service |
 | [`subbly.setting`]({{ '/core-api/services/setting' | prepend: site.baseurl }}) | Setting service |
 
 ## How listen an event
