@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Subbly\Api\Service\OrderService | Subbly API</title>
+                    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../classes.html">Classes</a></li>
+                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../traits.html">Traits</a></li>
+            <li><a href="../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Subbly API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../../Subbly/Api/Service.html">Subbly\Api\Service</a>\OrderService</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>OrderService</strong>        extends <a href="../../../Subbly/Api/Service/Service.html"><abbr title="Subbly\Api\Service\Service">Service</abbr></a></p>
+
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Subbly/Api/Api.html"><abbr title="Subbly\Api\Api">Api</abbr></a> $api)
+                    <p>The constructor.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../Subbly/Api/Service/Service.html#method___construct"><abbr title="Subbly\Api\Service\Service">Service</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_name">name</a>()
+                    <p>Name of the service Must be unique</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_newOrder">newOrder</a>()
+                    <p>Return an empty model</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_all">all</a>(array $options = array())
+                    <p>Get all Order</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_find">find</a>(string $id, array $options = array())
+                    <p>Find a Order by $id</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Subbly/Model/Collection.html"><abbr title="Subbly\Model\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_searchBy">searchBy</a>(array|string $searchQuery, array $options = array(), string $statementsType = null)
+                    <p>Search a Order by options</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_create">create</a>(<a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>|array $order)
+                    <p>Create a new Order</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_update">update</a>()
+                    <p>Update a Order</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">in <a href="../../../Subbly/Api/Service/Service.html#method___construct"><abbr title="Subbly\Api\Service\Service">Service</abbr></a> at line 27</div>
+        <code>final            public            
+    <strong>__construct</strong>(<a href="../../../Subbly/Api/Api.html"><abbr title="Subbly\Api\Api">Api</abbr></a> $api)</code>
+    </h3>
+    <div class="details">
+        <p>The constructor.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../Subbly/Api/Api.html"><abbr title="Subbly\Api\Api">Api</abbr></a></td>
+                <td>$api</td>
+                <td>The Api class</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../Subbly/Api/Service/Exception.html"><abbr title="Subbly\Api\Service\Exception">Exception</abbr></a></td>
+                <td>If name() method does not return a string</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_name">
+        <div class="location">at line 189</div>
+        <code>            public            string
+    <strong>name</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Name of the service Must be unique</p>
+        <p>Example of value: 'subbly.user'</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_newOrder">
+        <div class="location">at line 21</div>
+        <code>            public            <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+    <strong>newOrder</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return an empty model</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_all">
+        <div class="location">at line 35</div>
+        <code>            public            <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+    <strong>all</strong>(array $options = array())</code>
+    </h3>
+    <div class="details">
+        <p>Get all Order</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_find">
+        <div class="location">at line 55</div>
+        <code>            public            <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+    <strong>find</strong>(string $id, array $options = array())</code>
+    </h3>
+    <div class="details">
+        <p>Find a Order by $id</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_searchBy">
+        <div class="location">at line 85</div>
+        <code>            public            <a href="../../../Subbly/Model/Collection.html"><abbr title="Subbly\Model\Collection">Collection</abbr></a>
+    <strong>searchBy</strong>(array|string $searchQuery, array $options = array(), string $statementsType = null)</code>
+    </h3>
+    <div class="details">
+        <p>Search a Order by options</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array|string</td>
+                <td>$searchQuery</td>
+                <td>Search params</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Query options</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$statementsType</td>
+                <td>Type of statement null|or|and (default is null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Subbly/Model/Collection.html"><abbr title="Subbly\Model\Collection">Collection</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_create">
+        <div class="location">at line 112</div>
+        <code>            public            <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+    <strong>create</strong>(<a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>|array $order)</code>
+    </h3>
+    <div class="details">
+        <p>Create a new Order</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>|array</td>
+                <td>$order</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_update">
+        <div class="location">at line 154</div>
+        <code>            public            <a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a>
+    <strong>update</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Update a Order</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Subbly/Model/Order.html"><abbr title="Subbly\Model\Order">Order</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
