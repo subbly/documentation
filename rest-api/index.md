@@ -32,3 +32,8 @@ Subbly REST API use JSON format.
 | Name | status | Description |
 |------|--------|-------------|
 | [`/v1`]({{ '/rest-api/v1/services' | prepend: site.baseurl }}) | devel | Version 1 |
+
+## Some others informations
+
+* Dates are always return into [ISO8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+* HTTP response contain the `Etag` header.
