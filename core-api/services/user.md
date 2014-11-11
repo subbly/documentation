@@ -15,6 +15,7 @@ back_url: /core-api/
 - [`update`](#update)
 
 
+
 ## newUser
 
 {% highlight php %}

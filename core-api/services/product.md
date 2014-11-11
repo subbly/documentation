@@ -14,6 +14,7 @@ back_url: /core-api/
 - [`update`](#update)
 
 
+
 ## newProduct
 
 {% highlight php %}
