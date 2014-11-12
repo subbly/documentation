@@ -1,19 +1,19 @@
 ---
 layout: page
 title: User addresses services
-permalink: /rest-api/v1/services/user-addresses/
+permalink: /rest-api/v1/services/addresses/
 back_url: /rest-api/v1/services
 ---
 
 ## List of methods
 
-- [GET `/users/:user_uid/user-addresses`](#get-usersuseruiduser-addresses)
-- [POST `/users/:user_uid/user-addresses`](#post-usersuseruiduser-addresses)
+- [GET `/users/:user_uid/addresses`](#get-usersuseruidaddresses)
+- [POST `/users/:user_uid/addresses`](#post-usersuseruidaddresses)
 
 
 
 
-## GET `/users/:user_uid/user-addresses`
+## GET `/users/:user_uid/addresses`
 
 _Get addresses list of a user_
 
@@ -62,7 +62,7 @@ integer   offset   Offset
 
 
 
-## POST `/users/:user_uid/user-addresses`
+## POST `/users/:user_uid/addresses`
 
 _Add a new user address to a user_
 
