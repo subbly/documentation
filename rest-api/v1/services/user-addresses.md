@@ -43,6 +43,7 @@ integer   offset   Offset
         "phone_work": null,
         "phone_home": null,
         "phone_mobile": null,
+        "others_informations": null,
         "created_at": "2014-11-11T16:55:07+0000",
         "updated_at": "2014-11-11T16:55:07+0000"
       },
@@ -78,9 +79,11 @@ string   user_address[zipcode]     The address zip code
 string   user_address[city]        The address city
 string   user_address[country]     The address country
 
-string   user_address[phone_work]    The address phone of work (optional)
-string   user_address[phone_home]    The address phone of home (optional)
-string   user_address[phonemobile]   The address mobile phone (optional)
+string   user_address[phone_work]     The address phone of work (optional)
+string   user_address[phone_home]     The address phone of home (optional)
+string   user_address[phone_mobile]   The address mobile phone (optional)
+
+string    user_address[others_informations]   Some other informations relative to the address
 {% endhighlight %}
 
 ### Response example
@@ -101,6 +104,7 @@ string   user_address[phonemobile]   The address mobile phone (optional)
       "phone_work": null,
       "phone_home": null,
       "phone_mobile": null,
+      "others_informations": null,
       "created_at": "2014-11-11T16:55:07+0000",
       "updated_at": "2014-11-11T16:55:07+0000"
     }
