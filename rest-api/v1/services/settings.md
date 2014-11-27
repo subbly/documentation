@@ -8,7 +8,7 @@ back_url: /rest-api/v1/services
 ## List of methods
 
 - [GET `/settings`](#get-settings)
-- [PUT&#124;PATCH `/settings/:setting_key`](#putpatch-settingssettingkey)
+- [PUT&#124;PATCH `/settings`](#putpatch-settings)
 
 
 
@@ -45,23 +45,39 @@ No params
 
 
 
-## PUT|PATCH `/settings/:setting_key`
+## PUT|PATCH `/settings`
 
-_Update a setting value_
+_Update setting values_
 
 ### Params
 
 {% highlight text %}
-mixed   value   The new value for the setting
+settings[setting_key]   mixed   The new value for the setting_key
+{% endhighlight %}
+
+### Request example
+
+{% highlight json %}
+{
+  "settings": {
+    "subbly.shop_name": "My first shirt shop",
+    "subbly.contact_email": "hello@bestshirtsever.com"
+  }
+}
 {% endhighlight %}
 
 ### Response example
 
 {% highlight json %}
 {
-  "response": {
-
-  }
+  "headers": {
+    "status": {
+      "code": 200,
+      "message": "Settings updated"
+    },
+    ...
+  },
+  "response": null
 }
 {% endhighlight %}
 
