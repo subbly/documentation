@@ -52,6 +52,14 @@ Subbly::events()->listen('subbly.user:creating', function($user) {
 `:initialized`: Fired after initialize the service
 
 
+## Common options
+
+### For collections
+
+* includes
+* order_by
+
+
 ## Some helps
 
 * [How to create and register my first service]({{ '/core-api/helps/create-and-register-my-first-service' | prepend: site.baseurl }})

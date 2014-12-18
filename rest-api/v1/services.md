@@ -20,6 +20,11 @@ back_url: /rest-api
 
 ## Common params
 
+### Ordering
+
+You can use `order_by` parameter to request ordered results. `order_by` must be an array.  
+Example: `http://my.awesome-shop.com/api/v1/users?order_by[email]=desc&order_by[uid]=asc`
+
 ### Relationships
 
 You can use `includes` parameter to ask some relationships. `includes` must be an array.  
