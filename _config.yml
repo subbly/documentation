@@ -8,7 +8,7 @@ description: Description here
 #   Google search results) and in your feed.xml site description.
 
 baseurl: "/documentation" # the subpath of your site, e.g. /blog/
-url: "https://subbly.github.io" # the base hostname & protocol for your site
+url: "https://documentation.subbly.com" # the base hostname & protocol for your site
 # url: "http://doc.subbly.com" # the base hostname & protocol for your site
 permalink: /updates/:year-:month-:day-:title
 
