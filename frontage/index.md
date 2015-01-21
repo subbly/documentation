@@ -14,6 +14,7 @@ Built on top of a [PHP port](https://github.com/XaminProject/handlebars.php) of 
 
 * [Basic's](#basics) 
 * [Routes](#routes)
+  * [Reserved Routes](#reserved-routes)
 * [Subbly's Variables](#subbly-variables)
 * [Expressions]({{ '/frontage/expressions' | prepend: site.baseurl }})
   * [Control Structures]({{ '/frontage/control-structures' | prepend: site.baseurl }})
@@ -53,6 +54,16 @@ Inside `config/subbly.php`, you can define an array of `url` to `file` pairs. Fi
 )
     {% endraw %}
     {% endhighlight %}
+
+In the previous exemple, the URL /products/123-my-product will match to the `/themes/<your theme>/product.html`.
+
+#### <a name="reserved-routes"></a>Reserved Routes
+
+Frontage needs the following routes for its standard operation. You must not override them :
+
+* `login`
+* `sign-in`
+* `add-to-cart`
 
 ### <a name="subbly-variables"></a>Subbly's Variables
 
