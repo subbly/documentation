@@ -32,8 +32,8 @@ Return a new `Subbly\Model\Product` instance.
 $product = Subbly::api('subbly.product')->all();
 {% endhighlight %}
 
-Return a `Subbly\Model\Product` collection.
-
+Return a `Subbly\Model\Product` collection.   
+Available includes are `images`, `options`, `categories` and `translations`.
 
 ## find
 

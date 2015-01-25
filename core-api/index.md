@@ -31,8 +31,33 @@ Subbly::api('subbly.user')->all();
 | [`subbly.product`]({{ '/core-api/services/product' | prepend: site.baseurl }}) | Product service |
 | [`subbly.user`]({{ '/core-api/services/user' | prepend: site.baseurl }}) | User service |
 | [`subbly.user_address`]({{ '/core-api/services/user-address' | prepend: site.baseurl }}) | User address service |
-| [`subbly.setting`]({{ '/core-api/services/setting' | prepend: site.baseurl }}) | Setting service |
+| [`subbly.setting`]({{ '/core-api/services/setting' | prepend: site.baseurl }}) | Setting service |  
 
+## Filter results
+
+When asking `all` method you can filter result with `options`:
+
+{% highlight php %}
+<?php
+$options =  [
+    'includes' => [ 'images', 'categories' ]
+  , 'limit'    => 2
+  , 'offset'   => 0
+  , 'order_by' => ['created_at' => 'desc']
+    'where'    => [
+        ['quantity', '=', 1]
+    ]
+];
+$product = Subbly::api('subbly.product')->all( $options );
+{% endhighlight %}
+
+Options include:
+
+* `includes`: a list of relation to include into the query.
+* `limit` and `offset`, allow you to set pagination.
+* `order_by` an array to set results order.
+* `where` to define restrictions on the `products` table.
+* `has` to define restrictions on the `products`'s relation' tables. 
 
 ## How listen an event
 
