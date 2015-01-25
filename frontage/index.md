@@ -18,7 +18,8 @@ Built on top of a [PHP port](https://github.com/XaminProject/handlebars.php) of 
 * [Subbly's Variables](#subbly-variables)
 * [Expressions]({{ '/frontage/expressions' | prepend: site.baseurl }})
   * [Control Structures]({{ '/frontage/control-structures' | prepend: site.baseurl }})
-  * [Natives Helpers]({{ '/frontage/control-structures#built-in' | prepend: site.baseurl }})
+  * [Natives Helpers]({{ '/frontage/format-helpers/' | prepend: site.baseurl }})
+  * [Query Helpers]({{ '/frontage/query-helpers/' | prepend: site.baseurl }})
 * [Subbly's Helpers Reference](#subbly-helpers)
 * [Writing your own helpers](#writing-helpers)
 
