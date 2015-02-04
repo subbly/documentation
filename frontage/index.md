@@ -44,19 +44,28 @@ The string above can be used as is in a HTML file inside you theme folder (ie: *
 
 ### <a name="routes"></a>Routes
 
-Inside `config/subbly.php`, you can define an array of `url` to `file` pairs. Files are store into the `themes` directory.
+With Subbly you can define your own set of "route/file" pairs.  
+Simply edit the `frontageUri` option in the `app\config\subbly.php` file.  
+Templates files are store into the `themes` directory.
 
     {% highlight php %}
     {% raw %}
-'frontendUri' => array(
-    '/'                                          => 'index'
-  , '/products/{page}/{category}/{subcategory}'  => 'catalog'
-  , '/products/{id}-{slug}'                      => 'product'
+'frontageUri' => array(
+    '/'                                           => 'index'
+  , '/products'                                   => 'catalog'
+  , '/products/{productSku}-{productSlug}'        => 'product'
+  , '/signin'                                     => 'signin'
+  , '/account'                                    => 'account@signin'
+  , '/account/address/{addressId}'                => 'account.address@signin'
 )
     {% endraw %}
     {% endhighlight %}
 
-In the previous exemple, the URL /products/123-my-product will match to the `/themes/<your theme>/product.html`.
+
+In the previous exemple, the URL `/products/123-my-product` will match with the `/themes/<your theme>/product.html` file.
+
+If you want to restrict page access to loggued user only, add the `@` suffix to the file name with `filename@redirect` where `redirect` is a available file name.
+
 
 #### <a name="reserved-routes"></a>Reserved Routes
 
